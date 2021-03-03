@@ -1,0 +1,56 @@
+{
+  "name": "PA-2021-Venom-bot",
+  "version": "1.0.0",
+  "description": "Projeto Aplicado - Controle de Manutenção com Node.js & PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flgc/pa2021-api-venom.git"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "postgreSQL",
+    "serverless",
+    "github-actions",
+    "app-service",
+    "express"
+  ],
+  "author": "Fabio Luis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flgc/pa2021-api-venom.git/issues"
+  },
+  "homepage": "https://github.com/Flgc/pa2021-api-venom.git#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^5.1.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^6.1.1",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "g": "^2.0.1",
+    "mongoose": "^5.11.17",
+    "morgan": "^1.10.0",
+    "node-gyp": "^7.1.2",
+    "pg": "^8.5.1",
+    "rebuild": "^0.1.2",
+    "venom-bot": "^3.0.8"
+  }
+}
