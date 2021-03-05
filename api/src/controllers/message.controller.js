@@ -13,6 +13,8 @@ var clientsArray = [];
 
 let chromiumArgs = ['--disable-web-security', '--no-sandbox', '--disable-web-security', '--aggressive-cache-discard', '--disable-cache', '--disable-application-cache', '--disable-offline-load-stale-cache', '--disk-cache-size=0', '--disable-background-networking', '--disable-default-apps', '--disable-extensions', '--disable-sync', '--disable-translate', '--hide-scrollbars', '--metrics-recording-only', '--mute-audio', '--no-first-run', '--safebrowsing-disable-auto-update', '--ignore-certificate-errors', '--ignore-ssl-errors', '--ignore-certificate-errors-spki-list'];
 
+// ==> Inicia o venon-bot
+
 // ==> * abrir a sessao.
 
 async function opendata(req, res, sessionName) {
@@ -84,12 +86,14 @@ module.exports = {
 
         opendata(req, res, sessionName)
     },
+
     async fecharSessao(req, res) {
         const {session} = req.body
         await clientsArray[session].close();
 
         req.io.emit('whatsapp-status', false)
     },
+
     //envio de mensagens
     async enviar_msg(req, res) {
         const {phone, msg, session} = req.body

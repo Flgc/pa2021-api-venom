@@ -4,7 +4,7 @@
  * Data: 23/02/2021
  */
 
- // ==> Método responsável por cria um novo 'Product':
+ // ==> Método responsável por permitir a conecção com a base de dados
 
  const { Pool } = require('pg');
  const dotenv = require('dotenv');

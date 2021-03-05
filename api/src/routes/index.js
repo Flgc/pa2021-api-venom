@@ -7,7 +7,7 @@
  const express = require('express');
  const router = express.Router();
 
-router.get('/api', (req, res) => {
+ router.get('/api', (req, res) => {
   res.status(200).send({
     success: 'true',
     message: 'Projeto Aplicado - Controle de Manutenção com Node.js & PostgreSQL',
