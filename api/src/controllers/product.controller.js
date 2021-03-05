@@ -4,7 +4,6 @@
  * Data: 25/02/2021
  */
 
-
  // ==> * método responsável por criar um novo 'Product'.
  
  const db = require("../config/database");
@@ -68,5 +67,3 @@
 
     res.status(200).send({ message: 'Product deleted successfully!', productId })
  };
-
-
