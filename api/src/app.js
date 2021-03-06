@@ -13,7 +13,7 @@ const app = express();
 
 const index = require('./routes/index');
 const productRoute = require('./routes/product.routes');
-const phoneRoute = require('./routes/phone.routes')
+//const phoneRoute = require('./routes/phone.routes')
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -22,6 +22,6 @@ app.use(cors());
 
 app.use(index);
 app.use('/api/', productRoute);
-app.use('/api/', phoneRoute);
+//app.use('/api/', phoneRoute);
 
 module.exports = app;
